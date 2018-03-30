@@ -1,0 +1,8 @@
+{
+  "name": "km.android",
+  "app_id": "5e68589b",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
