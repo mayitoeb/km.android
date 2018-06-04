@@ -9,15 +9,13 @@
 
 <ion-content>
   <ion-list>
-    <button *ngFor="let ad of ads" (click)="openPage()">
-      <ion-item>
-        <ion-thumbnail item-start>
-          <img src="{{ad.photoUrl}}">
-        </ion-thumbnail>
-        <h2>{{ad.title}}</h2>
-        <p>{{ad.subtitle}}</p>
-      </ion-item>
-    </button>
+    <ion-item *ngFor="let ad of ads">
+      <ion-thumbnail item-start>
+        <img src="{{ad.photoUrl}}">
+      </ion-thumbnail>
+      <h2>{{ad.title}}</h2>
+      <p>{{ad.subtitle}}</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
   </ion-list>
 </ion-content>
-
