@@ -21,4 +21,9 @@ export class HomePage {
       })
     }
 
+    openPage() {
+      console.log('button clicked');
+      alert('clicked');
+    }
+
 }
