@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import { catchError, map, tap } from 'rxjs/operators';
 import { of } from 'rxjs/observable/of';
 
-import {Ad} from '../models/ad'
+import {Ad} from '../shared/ad.model';
 
 @Injectable()
 export class AdService {
@@ -15,7 +15,7 @@ export class AdService {
     getAds (): Observable<Ad[]> {
         return this.http.get<Ad[]>(this.adUrl)
         .pipe(
-            tap(heroes => console.log('fetched ads')),
+            tap(ads => console.log('fetched ads', ads)),
             catchError(this.handleError('getAds', []))
         );
     }

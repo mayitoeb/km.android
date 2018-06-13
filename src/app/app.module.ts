@@ -5,10 +5,11 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { AdPage } from '../pages/ad/ad';
+import { AdPage } from '../pages/ads/ad/ad.component';
+import { AdListPage } from '../pages/ads/ad-list/ad-list.component'
 import { ListPage } from '../pages/list/list';
 
-import {AdService} from '../services/ad.service';
+import {AdService} from '../pages/ads/shared/ad.service';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -18,6 +19,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     AdPage,
+    AdListPage,
     ListPage
   ],
   imports: [
@@ -30,6 +32,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     AdPage,
+    AdListPage,
     ListPage
   ],
   providers: [

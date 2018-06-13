@@ -3,7 +3,8 @@ import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
     selector: 'page-ad',
-    templateUrl: 'ad.html'
+    templateUrl: 'ad.component.html'
   })
   export class AdPage {
+
   }
