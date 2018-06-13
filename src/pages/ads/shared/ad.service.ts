@@ -15,7 +15,7 @@ export class AdService {
     getAds (): Observable<Ad[]> {
         return this.http.get<Ad[]>(this.adUrl)
         .pipe(
-            tap(ads => console.log('fetched ads', ads)),
+            tap(ads => console.log('fetched ads')),
             catchError(this.handleError('getAds', []))
         );
     }
